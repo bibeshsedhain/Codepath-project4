@@ -1,0 +1,334 @@
+{
+  "mode": "live_groq",
+  "submissions": [
+    {
+      "sample": "uniform_ai_like",
+      "text": "The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user. The system provides consistent value for every user.",
+      "response": {
+        "ai_score": 0.76318,
+        "attribution": "uncertain",
+        "confidence": 0.76318,
+        "content_id": "c1ce3604-f2b6-4e01-8d66-ddd06c591e7c",
+        "creator_id": "demo-writer",
+        "guardrails": [],
+        "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+        "signals": {
+          "llm": {
+            "available": true,
+            "model": "openai/gpt-oss-120b",
+            "reasoning": "Repetitive generic sentence suggests AI generation, but could be human copy-paste, so moderate confidence.",
+            "score": 0.7
+          },
+          "stylometric": {
+            "available": true,
+            "metrics": {
+              "punctuation_density": 0.018913,
+              "sentence_count": 8,
+              "sentence_length_cv": 0.0,
+              "type_token_ratio": 0.125,
+              "word_count": 64
+            },
+            "score": 0.952719
+          }
+        },
+        "status": "classified",
+        "timestamp": "2026-10-25T02:02:40.669794Z"
+      }
+    },
+    {
+      "sample": "casual_human_like",
+      "text": "Rain. I ran. Why did I forget my coat again? The bus driver waved me across the puddle, grinning like he knew exactly how my morning had gone. Anyway, after forty minutes of standing in soggy socks beside a woman carrying an enormous cardboard bird, I got to campus and realized that the notebook I needed was still on the kitchen table underneath yesterday\u2019s grocery receipt and three unopened letters from my landlord.",
+      "response": {
+        "ai_score": 0.191589,
+        "attribution": "likely_human",
+        "confidence": 0.808411,
+        "content_id": "b61521c7-16b8-4055-ad9a-94f4078720bc",
+        "creator_id": "demo-writer",
+        "guardrails": [],
+        "label": "Likely human-written: both checks found patterns consistent with human writing. This is an automated estimate, not verified authorship.",
+        "signals": {
+          "llm": {
+            "available": true,
+            "model": "openai/gpt-oss-120b",
+            "reasoning": "The passage contains specific, personal details and a coherent narrative that is typical of human writing; there is no generic boilerplate or overly vague language suggesting AI generation.",
+            "score": 0.2
+          },
+          "stylometric": {
+            "available": true,
+            "metrics": {
+              "punctuation_density": 0.019048,
+              "sentence_count": 5,
+              "sentence_length_cv": 1.120109,
+              "type_token_ratio": 0.876712,
+              "word_count": 73
+            },
+            "score": 0.166354
+          }
+        },
+        "status": "classified",
+        "timestamp": "2026-10-25T02:02:41.255098Z"
+      }
+    },
+    {
+      "sample": "formal_borderline",
+      "text": "The relationship between monetary policy and asset price inflation has been extensively studied in the literature. Central banks face a fundamental tension between their mandate for price stability and the unintended consequences of prolonged low interest rates on equity and real estate valuations.",
+      "response": {
+        "ai_score": 0.361779,
+        "attribution": "uncertain",
+        "confidence": 0.638221,
+        "content_id": "a09b9c65-42f9-44bb-aaf9-f2e6eb27cb49",
+        "creator_id": "demo-writer",
+        "guardrails": [
+          "insufficient_text"
+        ],
+        "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+        "signals": {
+          "llm": {
+            "available": true,
+            "model": "openai/gpt-oss-120b",
+            "reasoning": "The passage is coherent, domain\u2011specific, and lacks generic boilerplate; it reads like typical academic prose, so AI authorship evidence is weak.",
+            "score": 0.3
+          },
+          "stylometric": {
+            "available": true,
+            "metrics": {
+              "punctuation_density": 0.006689,
+              "sentence_count": 2,
+              "sentence_length_cv": 0.255814,
+              "type_token_ratio": 0.860465,
+              "word_count": 43
+            },
+            "score": 0.547115
+          }
+        },
+        "status": "classified",
+        "timestamp": "2026-10-25T02:02:41.894218Z"
+      }
+    },
+    {
+      "sample": "edited_borderline",
+      "text": "I've been thinking a lot about remote work lately. There are genuine tradeoffs \u2014 flexibility and no commute on one side, isolation and blurred work-life boundaries on the other. Studies show productivity varies widely by individual and role type.",
+      "response": {
+        "ai_score": 0.475446,
+        "attribution": "uncertain",
+        "confidence": 0.524554,
+        "content_id": "d04879e6-1959-4129-ba31-b1224a8fbd39",
+        "creator_id": "demo-writer",
+        "guardrails": [
+          "insufficient_text"
+        ],
+        "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+        "signals": {
+          "llm": {
+            "available": true,
+            "model": "openai/gpt-oss-120b",
+            "reasoning": "Generic, lacks personal specifics; could be AI-generated",
+            "score": 0.5
+          },
+          "stylometric": {
+            "available": true,
+            "metrics": {
+              "punctuation_density": 0.02439,
+              "sentence_count": 3,
+              "sentence_length_cv": 0.382043,
+              "type_token_ratio": 0.897436,
+              "word_count": 39
+            },
+            "score": 0.401786
+          }
+        },
+        "status": "classified",
+        "timestamp": "2026-10-25T02:02:42.922751Z"
+      }
+    }
+  ],
+  "appeal": {
+    "appeal_id": "6e1ce01d-cf60-4821-8c4a-ecdd424cd179",
+    "content_id": "c1ce3604-f2b6-4e01-8d66-ddd06c591e7c",
+    "message": "Appeal received. A human reviewer must review the original decision.",
+    "status": "under_review"
+  },
+  "audit_entries": [
+    {
+      "ai_score": 0.76318,
+      "appeal_id": "6e1ce01d-cf60-4821-8c4a-ecdd424cd179",
+      "appeal_reasoning": "I wrote this myself; please review my drafts.",
+      "appeal_timestamp": "2026-10-25T02:02:42.928846Z",
+      "attribution": "uncertain",
+      "confidence": 0.76318,
+      "content_id": "c1ce3604-f2b6-4e01-8d66-ddd06c591e7c",
+      "creator_id": "demo-writer",
+      "event_type": "appeal",
+      "guardrails": [],
+      "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+      "sequence": 5,
+      "signals": {
+        "llm": {
+          "available": true,
+          "model": "openai/gpt-oss-120b",
+          "reasoning": "Repetitive generic sentence suggests AI generation, but could be human copy-paste, so moderate confidence.",
+          "score": 0.7
+        },
+        "stylometric": {
+          "available": true,
+          "metrics": {
+            "punctuation_density": 0.018913,
+            "sentence_count": 8,
+            "sentence_length_cv": 0.0,
+            "type_token_ratio": 0.125,
+            "word_count": 64
+          },
+          "score": 0.952719
+        }
+      },
+      "status": "under_review",
+      "timestamp": "2026-10-25T02:02:42.929606Z"
+    },
+    {
+      "ai_score": 0.475446,
+      "attribution": "uncertain",
+      "confidence": 0.524554,
+      "content_id": "d04879e6-1959-4129-ba31-b1224a8fbd39",
+      "creator_id": "demo-writer",
+      "event_type": "classification",
+      "guardrails": [
+        "insufficient_text"
+      ],
+      "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+      "sequence": 4,
+      "signals": {
+        "llm": {
+          "available": true,
+          "model": "openai/gpt-oss-120b",
+          "reasoning": "Generic, lacks personal specifics; could be AI-generated",
+          "score": 0.5
+        },
+        "stylometric": {
+          "available": true,
+          "metrics": {
+            "punctuation_density": 0.02439,
+            "sentence_count": 3,
+            "sentence_length_cv": 0.382043,
+            "type_token_ratio": 0.897436,
+            "word_count": 39
+          },
+          "score": 0.401786
+        }
+      },
+      "status": "classified",
+      "timestamp": "2026-10-25T02:02:42.924273Z"
+    },
+    {
+      "ai_score": 0.361779,
+      "attribution": "uncertain",
+      "confidence": 0.638221,
+      "content_id": "a09b9c65-42f9-44bb-aaf9-f2e6eb27cb49",
+      "creator_id": "demo-writer",
+      "event_type": "classification",
+      "guardrails": [
+        "insufficient_text"
+      ],
+      "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+      "sequence": 3,
+      "signals": {
+        "llm": {
+          "available": true,
+          "model": "openai/gpt-oss-120b",
+          "reasoning": "The passage is coherent, domain\u2011specific, and lacks generic boilerplate; it reads like typical academic prose, so AI authorship evidence is weak.",
+          "score": 0.3
+        },
+        "stylometric": {
+          "available": true,
+          "metrics": {
+            "punctuation_density": 0.006689,
+            "sentence_count": 2,
+            "sentence_length_cv": 0.255814,
+            "type_token_ratio": 0.860465,
+            "word_count": 43
+          },
+          "score": 0.547115
+        }
+      },
+      "status": "classified",
+      "timestamp": "2026-10-25T02:02:41.895864Z"
+    },
+    {
+      "ai_score": 0.191589,
+      "attribution": "likely_human",
+      "confidence": 0.808411,
+      "content_id": "b61521c7-16b8-4055-ad9a-94f4078720bc",
+      "creator_id": "demo-writer",
+      "event_type": "classification",
+      "guardrails": [],
+      "label": "Likely human-written: both checks found patterns consistent with human writing. This is an automated estimate, not verified authorship.",
+      "sequence": 2,
+      "signals": {
+        "llm": {
+          "available": true,
+          "model": "openai/gpt-oss-120b",
+          "reasoning": "The passage contains specific, personal details and a coherent narrative that is typical of human writing; there is no generic boilerplate or overly vague language suggesting AI generation.",
+          "score": 0.2
+        },
+        "stylometric": {
+          "available": true,
+          "metrics": {
+            "punctuation_density": 0.019048,
+            "sentence_count": 5,
+            "sentence_length_cv": 1.120109,
+            "type_token_ratio": 0.876712,
+            "word_count": 73
+          },
+          "score": 0.166354
+        }
+      },
+      "status": "classified",
+      "timestamp": "2026-10-25T02:02:41.257197Z"
+    },
+    {
+      "ai_score": 0.76318,
+      "attribution": "uncertain",
+      "confidence": 0.76318,
+      "content_id": "c1ce3604-f2b6-4e01-8d66-ddd06c591e7c",
+      "creator_id": "demo-writer",
+      "event_type": "classification",
+      "guardrails": [],
+      "label": "Authorship uncertain: the checks do not provide enough consistent evidence. This content should not be treated as confirmed AI-generated or confirmed human-written.",
+      "sequence": 1,
+      "signals": {
+        "llm": {
+          "available": true,
+          "model": "openai/gpt-oss-120b",
+          "reasoning": "Repetitive generic sentence suggests AI generation, but could be human copy-paste, so moderate confidence.",
+          "score": 0.7
+        },
+        "stylometric": {
+          "available": true,
+          "metrics": {
+            "punctuation_density": 0.018913,
+            "sentence_count": 8,
+            "sentence_length_cv": 0.0,
+            "type_token_ratio": 0.125,
+            "word_count": 64
+          },
+          "score": 0.952719
+        }
+      },
+      "status": "classified",
+      "timestamp": "2026-10-25T02:02:40.670760Z"
+    }
+  ],
+  "rate_limit_statuses": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    429,
+    429
+  ]
+}
