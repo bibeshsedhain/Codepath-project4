@@ -6,6 +6,10 @@ The main design choice is to leave room for uncertainty. Writing style alone can
 
 **Current testing:** all seven automated tests pass. The four sample passages have also been run using `python verify.py --live`; their reported results are included below. The rate-limit test returned ten successful responses followed by two HTTP 429 responses. Separate fixed-score tests exercise all three label categories.
 
+## Video walkthrough
+
+[Watch the project walkthrough](https://drive.google.com/file/d/1wndvrl7r2nvxI8YnVhj9IdLjnJeSqe84/view?usp=sharing)
+
 ## Setup (Mac/Linux)
 
 Requires Python 3.10 or newer.
